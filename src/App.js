@@ -61,6 +61,10 @@ const App = () => {
       dispatch({ type: SET_USERNAME, payload: tokens.tokenParsed.name });
     }
     localStorage.setItem('isLoggedIn', tokens.authenticated);
+    // Persist the raw JWT for later API calls
+    if (tokens.token) {
+      localStorage.setItem('jwtToken', tokens.token);
+    }
     console.log('Keycloak tokens:', tokens);
   };
 
