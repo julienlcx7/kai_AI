@@ -1,0 +1,14 @@
+.Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    height: 100vh; /* Use viewport height */
+}
+.grid_dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusts the space between grid items */
+    justify-content: center;
+    max-width: 1200px; /* Adjust based on your needs */
+}

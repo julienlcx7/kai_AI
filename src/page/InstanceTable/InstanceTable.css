@@ -1,0 +1,196 @@
+.element_modele {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .table-container {
+    width: 100%;
+  }
+  
+  .instance-table {
+    width: 100%;
+    border-collapse: separate; /* Permet les espaces entre les lignes */
+    border-spacing: 0 10px; /* Ajoute un espacement vertical de 10px */
+  }
+  
+  .instance-table th,
+  .instance-table td {
+    text-align: left;
+    padding: 10px 15px;
+  }
+  
+  .instance-table th {
+    background-color: transparent;
+    font-weight: bold;
+    color: #333; /* Couleur du texte des en-têtes */
+  }
+  .instance-name {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+
+.instance-table th:last-child,
+.instance-table td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+  
+  .instance-table tbody .main-row {
+    background-color: var(--bg-color, #ffffff); /* Couleur de fond par défaut */
+    transition: background-color 0.3s ease; /* Transition pour l'effet hover */
+  }
+  
+  .instance-table tbody .main-row:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .status-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .status-online {
+    background-color: #c0ecc9;
+    color: #3A974C;
+  }
+  
+  .status-offline {
+    background-color: #D7BEBF;
+    color: #973A3A;
+  }
+  
+  .status-pending {
+    background-color: #F1CEB2;
+    color: #F29339;
+  }
+  
+  .status-unknown {
+    background-color: #9e9e9e;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 14px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background-color: #1565c0;
+  }
+  .pod-row {
+    background-color: white;
+  }
+  .instance-name-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+    text-align: left;
+  }
+  
+  
+  .arrow-icon {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+  }
+  .arrow-icon svg{
+    transition: transform 0.3s ease
+  }
+
+  .arrow-icon.rotated svg{
+    transform: rotate(180deg);
+  }
+  
+
+  table td iconify-icon {
+    margin: 0 5px;
+    cursor: pointer;
+    color: var(--blue-color);
+    font-size: 20px;
+  }
+
+  .pod-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+  }
+  
+  .pod-table th {
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .main-row {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-row:hover {
+    background-color: #e6f7ff;
+  }
+  .link_span{
+    background-color: var(--blue-color);
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+  }
+  .link_pod{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .link_pod div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .link_pod a{
+    text-decoration: underline;
+    color: var(--blue-color);
+  }
+  .status-pod{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+  }
+.pod-table thead{
+  background-color: white;
+}
+.pod_info{
+  background-color: var(--bg-color);
+}

@@ -1,0 +1,13 @@
+.element_params{
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

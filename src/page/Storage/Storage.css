@@ -1,0 +1,66 @@
+.element_storage{
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.element_storage h1{
+    font-size: 20px;
+}
+.grid_storage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajuste l'espacement horizontalement */
+    width: 100%;
+}
+
+.grid_storage .storage {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333%); /* Three columns layout */
+    min-width: 250px; /* Adjust based on your needs */
+}
+.element_storage form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: 100%;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: 100%;
+}
+.form_sumbit{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+.form_sumbit input{
+    background-color: var(--blue-color);
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.form_sumbit button{
+    background-color: var(--bg-color);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
