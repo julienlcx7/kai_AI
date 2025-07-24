@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Authentication
+
+The application uses Keycloak for authentication. When a user logs in, the JWT access token is stored in
+`localStorage` under the key `jwtToken`. You can retrieve it using standard Web APIs:
+
+```javascript
+const token = localStorage.getItem('jwtToken');
+```
+
+This token can then be used for authorized API calls.

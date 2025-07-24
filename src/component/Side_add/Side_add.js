@@ -21,11 +21,12 @@ const Side_add = ({ watch, setWatch,token }) => {
 
   // Function to handle form submission
   const handleSaveTemplate = () => {
-    const token = token; // Replace with the actual token
+    // Use the token provided via props for API calls
+    const authToken = token;
 
     if (tenant && modelName && modelType.length > 0) {
       // Dispatch create_model action with the input values
-      dispatch(create_model(token, tenant, modelName, modelType.join(','))) // Pass selected options as a string
+      dispatch(create_model(authToken, tenant, modelName, modelType.join(','))) // Pass selected options as a string
         .then(() => {
           handleRemoveActiveClass();
         })

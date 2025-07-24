@@ -14,7 +14,7 @@ function Main() {
   // Dès que keycloak.authenticated passe à true, on redirige une fois vers /Dashboard
   useEffect(() => {
     if (keycloak.authenticated) {
-      navigate('/Dashboard', { replace: true });
+      navigate('/dashboard', { replace: true });
     }
   }, [keycloak.authenticated, navigate]);
 

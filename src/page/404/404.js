@@ -18,7 +18,7 @@ function Page_404() {
           <h1>404</h1>
           <p>Something went<br/>
           <b>WRONG!</b></p>
-          <button onClick={() => navigate("/Dashboard")}>Back to Home</button>
+          <button onClick={() => navigate("/dashboard")}>Back to Home</button>
         </div>
       <img src={avatar} className='avatar_404'></img>
       </div>
