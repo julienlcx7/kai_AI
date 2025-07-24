@@ -13,7 +13,7 @@ const Navbar = ({ Title, showButton,element,id_element}) => {
   return (
     <div className="navbar">
       <div className="logo-container">
-        <Link to={"/Dashboard"}>
+        <Link to={"/dashboard"}>
           <img id="logo" src={logo}></img>
         </Link>
         <img id={id_element} src={element}></img>

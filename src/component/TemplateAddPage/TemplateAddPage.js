@@ -32,7 +32,7 @@ const TemplateAddPage = ({ title, onButtonClick }) => {
     }
 
     // Redirection vers Dashboard après la sauvegarde
-    navigate("/Dashboard");
+    navigate("/dashboard");
   };
 
   return (

@@ -239,7 +239,7 @@ const Explore = () => {
                     value_three={"$0.006 / hr"}
                   />
                 </div>
-                <button onClick={() => navigate("/Dashboard")}>Deploy On-Demand</button>
+                <button onClick={() => navigate("/dashboard")}>Deploy On-Demand</button>
               </div>
             )}
           </div>
