@@ -12,7 +12,7 @@ const Lock_Content = ({ title, logo, subtitle }) => {
   useEffect(() => {
     if (keycloak.authenticated) {
       // Faites correspondre exactement la casse de votre route définie dans App.js
-      navigate('/Dashboard', { replace: true });
+      navigate('/dashboard', { replace: true });
     }
   }, [keycloak.authenticated, navigate]);
   return (

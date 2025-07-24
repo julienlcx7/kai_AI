@@ -14,7 +14,7 @@ const Kubeflow = () => {
       <div className='txt_404'>
         <p>Start customize<br/>
         <b>Instance</b></p>
-        <button onClick={() => navigate("/Dashboard")}>Go Kubeflow</button>
+        <button onClick={() => navigate("/dashboard")}>Go Kubeflow</button>
       </div>
     <img src={Kubeflow_logo} className='logo_services'></img>
     </div>
