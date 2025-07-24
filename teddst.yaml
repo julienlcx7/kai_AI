@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kai-ui
+  namespace: default
+  labels:
+    app: kai-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kai-ui
+  template:
+    metadata:
+      name: kai-ui
+      labels:
+        app: kai-ui
+    spec:
+      containers:
+        - name: kai-ui
+          image: kai-ui:dev
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+              name: http
+      restartPolicy: Always
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: kai-ui
+  namespace: default
+spec:
+  selector:
+    app: kai-ui
+  type: ClusterIP
+  ports:
+    - port: 3000
+      name: http

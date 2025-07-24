@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui
+  namespace: kai-ui
+  labels:
+    app: ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui
+  template:
+    metadata:
+      labels:
+        app: ui
+    spec:
+      containers:
+      - name: ui
+        image: hosteurdkuser/aiflow-ui:0.1
+        ports:
+        - containerPort: 3000
+      imagePullSecrets:
+      - name: regcred
+      nodeSelector:
+        aiflow.hosteur.cloud/type: CPU
