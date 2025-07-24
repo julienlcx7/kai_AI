@@ -1,0 +1,26 @@
+.info_machine{
+    display: flex;
+    align-items: center;
+}
+.info_machine img{
+    width: auto;
+    height: 5rem;
+}
+.btn_modele{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+.btn_modele svg{
+    color: var(--blue2-color);
+    font-size: 20px;
+}
+.btn_modele button{
+    background-color: transparent;
+    border: 2px solid var(--blue2-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn_modele button:hover{
+    background-color: var(--blue-hover);
+}

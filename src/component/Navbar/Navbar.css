@@ -1,0 +1,96 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Conteneur du logo et de la planète */
+.logo-container {
+    position: relative; /* Permet de positionner l'image de la planète en absolu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image du logo */
+.logo-container #logo {
+    position: relative;
+    z-index: 2000; /* Assure que le logo est au premier plan */
+    width: 10rem; /* Ajuste la taille du logo */
+}
+
+/* Image de la planète */
+.logo-container #planet{
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 10%;
+    transform: translate(-50%, -50%); /* Centre parfaitement */
+    z-index: 0; /* Place la planète derrière */
+    width: 8rem; /* Ajuste la taille de la planète */
+}
+.logo-container #cloud{
+    position: absolute;
+    top: 70%; /* Centre verticalement */
+    left: 30%;
+    transform: translate(-50%, -50%); /* Centre parfaitement */
+    z-index: 0; /* Place la planète derrière */
+    width: 8rem; /* Ajuste la taille de la planète */
+}
+
+.navbar h1{
+    display: none;
+}
+.amount{
+    padding: 10px;
+    color: transparent;
+}
+.amount p {
+    margin: 0;
+}
+.navbar img{
+    width: 10rem;
+}
+.bloc_3{
+    display: flex;
+    align-items: center;
+}
+.logout{
+    background-color: transparent;
+    border: none;
+}
+.bar{
+    display: flex;
+}
+.user_text{
+    display: flex;
+    flex-direction: row;
+}
+.user_text a{
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+.user_text .docs_text{
+    color: var(--grey-color);    
+}
+.nav_docs{
+    display: flex;
+    align-items: center;
+}
+.nav_docs p{
+    margin: 0;
+    color: var(--grey-color);
+}
+.nav_docs a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+iconify-icon{
+    color: var(--grey-color);
+}
+.nav_docs iconify-icon{
+    font-size: 16px;
+}
+.logout iconify-icon{
+    font-size: 16px;
+}

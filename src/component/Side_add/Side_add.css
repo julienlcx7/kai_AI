@@ -1,0 +1,51 @@
+.Side_add {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px; /* Définissez la largeur souhaitée pour la barre latérale */
+  height: 100vh; /* Prend toute la hauteur de la page */
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* S'assure que la pop-up est au-dessus des autres éléments */
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%); /* Cache la pop-up par défaut */
+  padding: 2rem;
+}
+
+.Side_add.active {
+  transform: translateX(0); /* Affiche la pop-up */
+}
+.Side_add_title{
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Side_add_title svg{
+  color: black;
+}
+.Side_add_title label{
+  color: black;
+}
+.Side_add_input{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btn_save_template{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--blue-color);
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.remove-active-button{
+  border: none;
+  background-color: transparent;
+}

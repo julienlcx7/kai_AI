@@ -1,0 +1,34 @@
+.Pods_card{
+    background-color: transparent;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+    border: 2px solid var(--blue-color);
+}
+.Pods_card h1{
+    font-size: 16px;
+}
+.Pods_card p{
+    font-size: 14px;
+    margin: 0;
+}
+.Pods_card:hover{
+    background-color: var(--blue-hover);
+    border: 2px solid var(--blue-color);
+}
+.price p{
+    text-align: end;
+}
+.gpu p{
+    text-align: end;
+}
+.grey{
+    color: var(--grey-color);
+}
+.blue{
+    color: var(--blue-color);
+    font-size: 12px;
+}

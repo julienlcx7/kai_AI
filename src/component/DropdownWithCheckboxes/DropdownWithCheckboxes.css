@@ -1,0 +1,21 @@
+.dropdown-container p{
+    color: black;
+}
+.dropdown-container button{
+    background-color: var(--bg-color);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color: var(--grey-color);
+}
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.dropdown-menu label{
+    background-color: var(--bg-color);
+    color: var(--grey-color);
+    padding: 10px;
+}

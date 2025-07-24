@@ -1,0 +1,25 @@
+.Pods_bar{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    width: 100%;
+    justify-content: start;
+}
+.Pods_bar div{
+    display: flex;
+    align-items: center;
+}
+.Pods_bar .etiquette {
+    background-color: var(--blue-color);
+    color: white;
+    padding: 8px 30px;
+    border-radius: 5px ;
+}
+.bar_2{
+    color: var(--blue-color);
+    display: flex;
+    gap: 2rem;
+}
+.bar_2 svg {
+    color: var(--blue-color);
+}

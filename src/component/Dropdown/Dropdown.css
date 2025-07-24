@@ -1,0 +1,48 @@
+.dropdown{
+    width: 100%;
+}
+button.dropdown-btn h2{
+    size: 15px;
+    color: black;
+}
+button.dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--bg-color);
+}
+.dropdown-btn iconify-icon{
+    font-size: 1.5rem;
+}
+.dropdown-item {
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+.dropdown-content {
+    padding: 10px; /* Ajoute un peu d'espace intérieur */
+    z-index: 1;
+    background-color: var(--bg-color);
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Style for the dropdown items on hover */
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+.dropdown-btn svg {
+    transition: transform 0.3s ease; /* Ajoute une transition d'animation à la propriété de transformation */
+}
+
+.dropdown-btn.rotate-up svg {
+    transform: rotate(180deg); /* Fait tourner l'icône de 180 degrés vers le haut */
+}

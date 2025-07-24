@@ -1,0 +1,23 @@
+a{
+    color: var(--grey-color);
+}
+
+.slidebar-item.active {
+    background: rgb(172,169,255);
+    background: linear-gradient(90deg, rgba(172,169,255,0.20) 0%, rgba(172,169,255,0) 70%); /* Couleur de fond bleu pour l'élément actif */
+    color: var(--blue-color); /* Couleur du texte pour l'élément actif */
+  }
+  
+  .slidebar-item.active .iconify,
+  .slidebar-item.active span {
+    color: var(--blue-color); /* Couleur de l'icône et du texte pour l'élément actif */
+  }
+  .slidebar-item{
+    padding: 10px;
+  }
+  .slidebar-item .iconify,
+  .slidebar-item span {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+  }

@@ -1,0 +1,45 @@
+
+.Card_dashboard {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* This makes the container square */
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
+    color: #fff;
+}
+
+.text_img p {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-size: 0.7rem;
+}
+

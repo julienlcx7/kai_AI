@@ -1,0 +1,16 @@
+.App{
+  display: flex;
+  height: 100%;
+}
+:root {
+  --bg-color: #FAFAFB;
+  --grey-color: #999;
+  --black-color: #000;
+  --white-color: #fff;
+  --blue-color: #5BC4FF;
+  --blue2-color: #86ABFF;
+  --blue-hover: hsla(202, 100%, 68%, 0.250);
+}
+main{
+  height: 100%;
+}

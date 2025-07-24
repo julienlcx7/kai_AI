@@ -1,0 +1,26 @@
+.Pods_price{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 1rem;
+}
+.Pods_price h1{
+    font-size: 16px;
+}
+.Pods_price p{
+    font-size: 14px;
+    margin: 0;
+}
+.Pods_price:hover{
+    background-color: var(--blue-hover);
+    border: 2px solid var(--blue-color);
+}
+.grey{
+    color: var(--grey-color);
+}
+.blue{
+    color: var(--blue-color);
+    font-size: 12px;
+}

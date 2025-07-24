@@ -1,0 +1,19 @@
+.Datacenter{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+.Datacenter h1{
+    font-size: 18px;
+}
+.Datacenter p{
+    font-size: 15px;
+}
+.Datacenter:hover{
+    background-color: var(--blue-hover);
+    border: 2px solid var(--blue-color);
+}

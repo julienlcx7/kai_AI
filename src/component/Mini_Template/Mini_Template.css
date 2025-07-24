@@ -1,0 +1,59 @@
+.info_mini_template{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.info_mini_template img{
+    width: auto;
+    height: 3rem;
+}
+.btn_modele{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.btn_modele svg{
+    color: var(--blue2-color);
+    font-size: 20px;
+}
+.btn_modele button{
+    background-color: transparent;
+    border: 2px solid var(--blue2-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+.caracteristique{
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.minfos p {
+    color: var(--grey-color);
+    margin: 0;
+    font-size: 10px;
+}
+.minfos h2{
+    font-size: 12px;
+    margin: 0;
+}
+.minfos{
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.minfos button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,60 @@
+.info_template{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.info_template img{
+    width: auto;
+    height: 5rem;
+}
+.btn_modele{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.btn_modele svg{
+    color: var(--blue2-color);
+    font-size: 20px;
+}
+.btn_modele button{
+    background-color: transparent;
+    border: 2px solid var(--blue2-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+.caracteristique{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.infos p {
+    color: var(--grey-color);
+    margin: 0;
+}
+.infos h2{
+    font-size: 16px;
+    margin: 0;
+}
+.infos{
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    width: calc(48% - 30px);
+}
+.infos iconify-icon{
+    color: var(--blue-color);
+    font-size: 5rem;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.infos button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}

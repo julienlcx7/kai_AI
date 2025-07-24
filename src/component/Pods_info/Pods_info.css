@@ -1,0 +1,17 @@
+.Pods_info{
+    border: 2px solid var(--grey-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 1rem;
+    width: 100%;
+}
+.Pods_info h1{
+    font-size: 16px;
+}
+.Pods_info p{
+    font-size: 14px;
+    margin: 0;
+    color: var(--grey-color);
+}
